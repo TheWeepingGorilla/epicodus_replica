@@ -1,0 +1,14 @@
+<h1>Section Information</h1>
+
+<ul>
+  <li><b><%=@section.number%></b> <%=@section.name%></li>
+</ul>
+
+<p>Options</p>
+<ul>
+  <li><a href="/sections/<%=@section.id%>/edit">Edit this page</a></li>
+  <li><a href="/sections/<%= @section.id %>"
+    data-confirm="Are you sure?"
+    data-method="delete"
+    rel="nofollow">Destroy</a></li>
+</ul>

@@ -1,0 +1,12 @@
+<h1>Epicodus Curriculum</h1>
+
+Sections:
+
+<ul>
+<% Section.all.each do |section| %>
+  <li><b><%=section.number%></b> <%=section.name%></li>
+<% end %>
+</ul>
+
+
+
