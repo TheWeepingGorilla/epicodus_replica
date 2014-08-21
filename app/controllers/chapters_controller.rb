@@ -16,6 +16,17 @@ class ChaptersController < ApplicationController
       render('chapters/new.html.erb')
     end
   end
+
+  def show
+    @chapter = Chapter.find(params[:id])
+    render('chapters/show.html.erb')
+  end
+
+  def edit
+    @chapter = Chapter.find(params[:id])
+    render('chapters/edit.html.erb')
+  end
+
 end
 
 

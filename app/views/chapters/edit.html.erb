@@ -1,0 +1,10 @@
+<h1>New Chapters</h1>
+
+
+<form method="post" action="/chapters/<%= @chapter.id %>">
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" value="<%= @chapter.name %>">
+  <label for="number">Number</label>
+  <input id="number" name="number" type="integer" value = "<%= @chapter.number %>">
+  <button>Create</button>
+</form>
