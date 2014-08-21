@@ -11,7 +11,7 @@ class ChaptersController < ApplicationController
   def create
     @chapter = Chapter.new(params[:chapter])
     if @chapter.save(params[:chapter])
-      render('chapters/success.html.erb')
+      redirect_to('/')
     else
       render('chapters/new.html.erb')
     end

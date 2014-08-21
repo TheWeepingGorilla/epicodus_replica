@@ -1,3 +1,12 @@
-<h1>CHAPTER!</h1>
+<h1>Epicodus Curriculum</h1>
+
+Chapters:
+
+<ul>
+<% Chapter.all.each do |chapter| %>
+  <li><b><%=chapter.number%></b> <%=chapter.name%></li>
+<% end %>
+</ul>
+
 
 
