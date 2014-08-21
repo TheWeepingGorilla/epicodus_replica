@@ -27,6 +27,22 @@ class ChaptersController < ApplicationController
     render('chapters/edit.html.erb')
   end
 
+  def update
+    @chapter = Chapter.find(params[:id])
+    if @chapter.update({:name => params[:name],
+                        :number => params[:number]})
+      redirect_to('/')
+    else
+      render('chapters/edit.html.erb')
+    end
+  end
+
+  def destroy
+    @chapter = Chapter.find(params[:id])
+    @chapter.destroy
+    render('chapters/destroy.html.erb')
+  end
+
 end
 
 

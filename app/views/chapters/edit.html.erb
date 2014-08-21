@@ -2,6 +2,7 @@
 
 
 <form method="post" action="/chapters/<%= @chapter.id %>">
+  <input type="hidden" name="_method" value="patch">
   <label for="name">Name</label>
   <input id="name" name="name" type="text" value="<%= @chapter.name %>">
   <label for="number">Number</label>
