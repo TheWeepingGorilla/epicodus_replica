@@ -1,0 +1,10 @@
+<h1>Epicodus Curriculum</h1>
+
+Lessons:
+
+<ul>
+<% Lesson.all.each do |lesson| %>
+  <li><b><%=lesson.number%></b> <%=lesson.name%></li>
+<% end %>
+</ul>
+

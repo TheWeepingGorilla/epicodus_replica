@@ -1,0 +1,14 @@
+<h1>Lesson Information</h1>
+
+<ul>
+  <li><b><%=@lesson.number%></b> <%=@lesson.name%></li>
+</ul>
+
+<p>Options</p>
+<ul>
+  <li><a href="/lessons/<%=@lesson.id%>/edit">Edit this page</a></li>
+  <li><a href="/lessons/<%= @lesson.id %>"
+    data-confirm="Are you sure?"
+    data-method="delete"
+    rel="nofollow">Destroy</a></li>
+</ul>
