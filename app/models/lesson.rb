@@ -4,6 +4,8 @@ class Lesson < ActiveRecord::Base
   validates :number, presence: true
   validates :number, numericality: { only_integer: true }
 
+  default_scope {order('number')}
+
   belongs_to :section
 
 end
